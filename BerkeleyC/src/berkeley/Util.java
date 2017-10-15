@@ -1,5 +1,7 @@
 package berkeley;
 
+import java.io.FileWriter;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.text.SimpleDateFormat;
@@ -16,8 +18,10 @@ public class Util {
     long atraso, atrasoAcumulado;
     String MasterOuSlave;
     long correcao = 0;
+    PrintWriter gravarArq;
 
-    public Util(int param) {
+    public Util(int param, FileWriter logFile) {
+        gravarArq = new PrintWriter(logFile);
         tempo1 = System.currentTimeMillis();
         tempo1Real = tempo1;
         sdf = new SimpleDateFormat("HH:mm:ss");
@@ -30,6 +34,7 @@ public class Util {
         }
         atrasoAcumulado = 0;
         System.out.println(MasterOuSlave + " - O atraso/adianto do relógio neste sistema é de " + atraso + " milisegundos a cada 10 segundos.");
+        gravarArq.printf(MasterOuSlave + " - O atraso/adianto do relógio neste sistema é de " + atraso + " milisegundos a cada 10 segundos.");    
     }
 
     public long getTempo() {
@@ -40,6 +45,7 @@ public class Util {
         atrasoAcumulado += esteAtraso;
         tempo1Real = tempo2;
         System.out.println("Atraso acumulado: " + atrasoAcumulado + " milisegundos");
+        gravarArq.printf("Atraso acumulado: " + atrasoAcumulado + " milisegundos");
         return tempo1;
     }
     
