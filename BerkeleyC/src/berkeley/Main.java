@@ -25,7 +25,7 @@ public class Main {
         String entrada = sc.nextLine();
         
         if(entrada.equals("-m")) {
-            System.out.println("ip:port");
+            System.out.println("ip:port (Recomendado localhost:9996)");
             String[] ipPort = sc.nextLine().split(":");
             System.out.println("time: default");
             System.out.println("d");
@@ -73,7 +73,7 @@ public class Main {
             new Master().initialize(IPsSlavesVetor, portasVetor, tol, arq);
         }
         else if(entrada.equals("-s")){
-            System.out.println("ip:port");
+            System.out.println("ip:port (Recomendado localhost:9996)");
             String[] ipPort = sc.nextLine().split(":");
             System.out.println("time: default");
             
