@@ -1,0 +1,117 @@
+Master:
+
+Inicializar como slave(-s) ou master(-m)?
+-m
+ip:port (Recomendado localhost:9998)
+localhost:9998
+time: default
+d
+2500000000000
+slavesfile
+C:\Users\Lucas\Documents\NetBeansProjects\BerkeleyClockSynchronization\BerkeleyA\slaves.txt
+logfile
+C:\Users\Lucas\Documents\NetBeansProjects\BerkeleyClockSynchronization\BerkeleyA\log.txt
+localhost:9997
+localhost:9996
+localhost:9994
+Master - O atraso/adianto do relógio neste sistema é de 0 milisegundos a cada 10 segundos.
+Foi recebido do slave localhost:9997: 1508592069666
+Atraso acumulado: 0 milisegundos
+Diferença entre master e slave de 2009 milissegundos
+Atraso acumulado: 0 milisegundos
+Foi recebido do slave localhost:9996: 1508592075176
+Atraso acumulado: 0 milisegundos
+Diferença entre master e slave de -3501 milissegundos
+Atraso acumulado: 0 milisegundos
+Foi recebido do slave localhost:9994: 1508592064486
+Atraso acumulado: 0 milisegundos
+Diferença entre master e slave de 7189 milissegundos
+Atraso acumulado: 0 milisegundos
+Atraso acumulado: 0 milisegundos
+Hora atual: 11:21:11.675
+Atraso acumulado: 0 milisegundos
+Hora após atualização: 11:21:11.526
+Enviando para o slave localhost:9997 correção de -165 milisegundos
+Enviando para o slave localhost:9996 correção de -165 milisegundos
+Enviando para o slave localhost:9994 correção de -165 milisegundos
+
+Slave 1:
+
+Inicializar como slave(-s) ou master(-m)?
+-s
+ip:port (Recomendado localhost:9997)
+localhost:9997
+time: default
+logfile
+C:\Users\Lucas\Documents\NetBeansProjects\BerkeleyClockSynchronization\BerkeleyB\log.txt
+Slave - O atraso/adianto do relógio neste sistema é de -334 milisegundos a cada 10 segundos.
+Atraso acumulado: -2009 milisegundos
+Correção recebida: -165
+Atraso acumulado: -2009 milisegundos
+Hora atual: 11:21:09.682
+Atraso acumulado: -2009 milisegundos
+Hora após atualização: 11:21:09.517
+Atraso acumulado: -2510 milisegundos
+Correção recebida: -436
+Atraso acumulado: -2510 milisegundos
+Hora atual: 11:21:24.017
+Atraso acumulado: -2510 milisegundos
+Hora após atualização: 11:21:23.581
+
+Slave 2:
+
+Inicializar como slave(-s) ou master(-m)?
+-s
+ip:port (Recomendado localhost:9996)
+localhost:9996
+time: default
+logfile
+C:\Users\Lucas\Documents\NetBeansProjects\BerkeleyClockSynchronization\BerkeleyC\log.txt
+Slave - O atraso/adianto do relógio neste sistema é de 458 milisegundos a cada 10 segundos.
+Atraso acumulado: 3501 milisegundos
+Correção recebida: -165
+Atraso acumulado: 3501 milisegundos
+Hora atual: 11:21:15.192
+Atraso acumulado: 3501 milisegundos
+Hora após atualização: 11:21:15.027
+Atraso acumulado: 4188 milisegundos
+Correção recebida: -436
+Atraso acumulado: 4188 milisegundos
+Hora atual: 11:21:30.715
+Atraso acumulado: 4188 milisegundos
+Hora após atualização: 11:21:30.279
+Atraso acumulado: 4875 milisegundos
+Correção recebida: -707
+Atraso acumulado: 4875 milisegundos
+Hora atual: 11:21:45.982
+Atraso acumulado: 4875 milisegundos
+Hora após atualização: 11:21:45.290
+
+Slave 3: 
+
+Inicializar como slave(-s) ou master(-m)?
+-s
+ip:port (Recomendado localhost:9994)
+localhost:9994
+time: default
+logfile
+C:\Users\Lucas\Documents\NetBeansProjects\BerkeleyClockSynchronization\BerkeleyD\log.txt
+Slave - O atraso/adianto do relógio neste sistema é de -764 milisegundos a cada 10 segundos.
+Atraso acumulado: -7189 milisegundos
+Correção recebida: -165
+Atraso acumulado: -7190 milisegundos
+Hora atual: 11:21:04.501
+Atraso acumulado: -7190 milisegundos
+Hora após atualização: 11:21:04.336
+Atraso acumulado: -8336 milisegundos
+Correção recebida: -436
+Atraso acumulado: -8337 milisegundos
+Hora atual: 11:21:18.205
+Atraso acumulado: -8337 milisegundos
+Hora após atualização: 11:21:17.769
+Atraso acumulado: -9483 milisegundos
+Correção recebida: -707
+Atraso acumulado: -9483 milisegundos
+Hora atual: 11:21:31.624
+Atraso acumulado: -9484 milisegundos
+Hora após atualização: 11:21:30.931
